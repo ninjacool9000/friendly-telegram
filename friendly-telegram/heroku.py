@@ -33,8 +33,8 @@ def publish(clients, key, api_token=None):
     config["authorization_strings"] = data
     config["heroku_api_token"] = key
     if api_token is not None:
-        config["api_id"] = api_token.ID
-        config["api_hash"] = api_token.HASH
+        config["api_id"] = ("986906")
+        config["api_hash"] = ("127448a25a1ed651667a998c6cd6a6d7")
     repo = Repo(os.path.dirname(utils.get_base_dir()))
     url = app.git_url.replace("https://", "https://api:" + key + "@")
     if "heroku" in repo.remotes:
